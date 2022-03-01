@@ -1,0 +1,78 @@
+main {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  background-color: white;
+
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.card {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &--0 {
+    background-color: $color-bright-orange;
+  }
+
+  &--0 &__btn {
+    color: $color-bright-orange;
+  }
+
+  &--1 {
+    background-color: $color-dark-cyan;
+  }
+
+  &--1 &__btn {
+    color: $color-dark-cyan;
+  }
+
+  &--2 {
+    background-color: $color-darker-cyan;
+  }
+
+  &--2 &__btn {
+    color: $color-darker-cyan;
+  }
+
+  &__icon {
+    height: 4rem;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    font-size: 3.5rem;
+    font-family: $font-title;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  &__para {
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    padding-bottom: 5rem;
+
+    @include respond(phone) {
+      padding-bottom: 2rem;
+    }
+  }
+  &__btn {
+    display: inline-block;
+
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    background-color: $color-light-gray;
+    text-decoration: none;
+    border: 2px $color-light-gray solid;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-light-gray;
+    }
+  }
+}

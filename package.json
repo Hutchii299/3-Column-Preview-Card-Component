@@ -1,0 +1,20 @@
+{
+  "name": "3-column-preview-card",
+  "version": "1.0.0",
+  "description": "Frontend-Mentor Challenge https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Rhys Hutchinson (gitHub: Hutchii299)",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "node-sass": "^7.0.1",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+.prettierignore
+.prettierrc
+FEM-resources
+dist
+.parcel-cache
