@@ -1,0 +1,111 @@
+/*
+    BREAKPOINTS:
+    0-375px:    phone [max-width]
+    375-1440px:    desktop [max-width]
+    1440px +:    big-desktop [min-width]
+
+
+$breakpoint arg choices
+- phone
+- desktop
+- big-desktop
+
+ORDER: Base + typography > general layout > page layout > components
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 3rem; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #111;
+  margin-top: 8rem; }
+
+.attribution a {
+  color: #3e52a3; }
+
+main {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  background-color: white;
+  border-radius: 0.7rem;
+  overflow: hidden; }
+
+.card {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  .card--0 {
+    background-color: #e38826; }
+  .card--0 .card__btn {
+    color: #e38826; }
+  .card--1 {
+    background-color: #006970; }
+  .card--1 .card__btn {
+    color: #006970; }
+  .card--2 {
+    background-color: #004241; }
+  .card--2 .card__btn {
+    color: #004241; }
+  .card__icon {
+    height: 4rem;
+    margin-bottom: 2rem; }
+  .card__title {
+    font-size: 3.5rem;
+    font-family: "Big Shoulders Display", cursive;
+    padding-bottom: 2rem;
+    text-transform: uppercase; }
+  .card__para {
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    padding-bottom: 5rem;
+    /* @content means that you are parsing a code block into this media query to be executed [see _base file]
+    rem and em are not affected by the root font setting (rem an em is affected by the the user browser preference in media queries)
+
+    em is the best option for media queries 1em = 16px
+
+    therefore 600px = (600/16) = 37.5em
+
+    'only screen' basically says that the mixin should only work on screens and not when the page is printed*/ }
+    @media only screen and (max-width: 23.43em) {
+      .card__para {
+        padding-bottom: 2rem; } }
+  .card__btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border: 2px #f2f2f2 solid;
+    transition: background-color 0.5s; }
+    .card__btn:hover {
+      background-color: transparent;
+      color: #f2f2f2; }

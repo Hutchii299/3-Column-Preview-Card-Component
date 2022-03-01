@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Frontend-Mentor Challenge https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
   "scripts": {
+    "sass": "node-sass src/sass/main.scss > styles.css",
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
   },
