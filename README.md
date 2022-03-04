@@ -5,4 +5,4 @@ Using any javascript in this challenge was entirely overkill; however, I wanted 
 
 This challenege is found at https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-
 
-Challenge completed 1 Mar 2020.
+Challenge completed 1 Mar 2022.
